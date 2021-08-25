@@ -32,13 +32,13 @@ RoyalTSX Setup:
         - For `nonprod` `Dynamic Folder Script` add:
           ```
           # Cardfree aka nonprod using your aws default profile
-          # Note: Must point to fully qualified path to royaltsx-ec2-discovery binary.
+          # Note: Must point to fully qualified path to royaltsx-ec2-discovery binary. Replace `<username>` with your username if using the same location.
           AWS_PROFILE=default AWS_REGION=us-west-2 /Users/<username>/Documents/Github/Cardfree/royaltsx-ec2-discovery/royaltsx-ec2-discovery -rdp_credential_name CARDFREE  -ssh_credential_name CARDFREE
           ```
         - For `prdcf` `Dynamic Folder Script` add:
           ```
           # Prdcf aka production using your aws prdcf profile
-          # Note: Must point to fully qualified path to royaltsx-ec2-discovery binary.
+          # Note: Must point to fully qualified path to royaltsx-ec2-discovery binary. Replace `<username>` with your username if using the same location.
           AWS_PROFILE=prdcf AWS_REGION=us-west-2 /Users/<username>/Documents/Github/Cardfree/royaltsx-ec2-discovery/royaltsx-ec2-discovery -rdp_credential_name PRDCF  -ssh_credential_name PRDCF
           ```
 
