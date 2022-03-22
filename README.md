@@ -14,10 +14,10 @@ go build .
 Run locally:
 ```
 # Cardfree aka nonprod using your aws default profile
-AWS_PROFILE=default AWS_REGION=us-west-2 ./main -rdp_credential_name CARDFREE  -ssh_credential_name CARDFREE
+AWS_PROFILE=default AWS_REGION=us-west-2 ./royaltsx-ec2-discovery -rdp_credential_name CARDFREE  -ssh_credential_name CARDFREE
 
 # Prdcf aka production using your aws prdcf profile
-AWS_PROFILE=prdcf AWS_REGION=us-west-2 ./main -rdp_credential_name PRDCF  -ssh_credential_name PRDCF
+AWS_PROFILE=prdcf AWS_REGION=us-west-2 ./royaltsx-ec2-discovery -rdp_credential_name PRDCF  -ssh_credential_name PRDCF
 ```
 
 RoyalTSX Setup:
